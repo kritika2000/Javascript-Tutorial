@@ -1,0 +1,64 @@
+:root {
+  --THEME-COLOR: rgb(146, 94, 237);
+  --BOX-SHADOW: 2px 2px 7px 2px rgb(188, 187, 187);
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--THEME-COLOR);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.root {
+  min-height: 200px;
+  width: 350px;
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.root button {
+  align-self: center;
+  padding: 0.6em;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--THEME-COLOR);
+  color: #fff;
+  box-shadow: var(--BOX-SHADOW);
+}
+
+.root button:hover {
+  transform: scale(1.02);
+  text-decoration: underline;
+}
+
+.root h2 {
+  color: rgb(109, 109, 109);
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.root p {
+  font-style: italic;
+  font-weight: 550;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

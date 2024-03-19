@@ -1,0 +1,51 @@
+:root {
+  --BG-COLOR: rgb(201, 201, 201);
+  --BOX-BORDER-COLOR: rgb(102, 102, 102);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--BG-COLOR);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+div#insert {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.key {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.key :first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 60px;
+  width: 100px;
+  border: 1px solid var(--BOX-BORDER-COLOR);
+}
+
+.key small {
+  order: -1;
+}

@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 300px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  box-shadow: 1px 1px 5px 1px rgb(211, 211, 211);
+  border-radius: 5px;
+  margin-inline: 0.5em;
+}
+
+.container .profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.profile-info button {
+  align-self: center;
+  padding: 0.5em;
+  border-radius: 5px;
+  color: #fff;
+  background-color: purple;
+  border: none;
+}
+
+:is(.container) h3,
+p {
+  text-align: center;
+}

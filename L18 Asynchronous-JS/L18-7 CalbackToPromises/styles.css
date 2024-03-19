@@ -1,0 +1,10 @@
+.danger {
+  background-color: red;
+}
+button {
+  background-color: black;
+  padding: 1em;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+}

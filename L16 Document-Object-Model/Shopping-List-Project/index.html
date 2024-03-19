@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- CDN for font-awesome icons, cross-origin attribute allows the browser to access the resource on cross-origin server. -->
+    <!-- https://web.dev/referrer-best-practices/ -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="root">
+      <header class="header">
+        <img src="./images/note.png" />
+        <h1 class="app-title" id="app-title">Shopping List</h1>
+      </header>
+      <form class="form">
+        <input
+          type="text"
+          placeholder="Enter Item"
+          class="item-input"
+          id="item-input"
+          name="item"
+        />
+        <select name="priority" id="priority-input" class="item-input">
+          <option value="0">Select Priority</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <div>
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox">Recurring Item</label>
+        </div>
+        <button type="submit" class="add-item-button">
+          <i class="fa fa-solid fa-plus"></i> Add Item
+        </button>
+        <a href="https://www.google.com">Google</a>
+      </form>
+      <div class="filter--container">
+        <input
+          type="text"
+          placeholder="Filter Items"
+          class="filter-items-input"
+          name="filters"
+        />
+      </div>
+      <div class="items--list--container">
+        <ul class="item-list">
+          <li class="item">
+            <button class="remove-item btn-link text-red">
+              Apples<i class="fas fa-solid fa-circle-xmark"></i>
+            </button>
+          </li>
+          <li class="item">
+            <button class="remove-item btn-link text-red">
+              Orange Juice<i class="fas fa-solid fa-circle-xmark"></i>
+            </button>
+          </li>
+          <li class="item">
+            <button class="remove-item btn-link text-red">
+              Oreos<i class="fas fa-solid fa-circle-xmark"></i>
+            </button>
+          </li>
+          <li class="item">
+            <button class="remove-item btn-link text-red">
+              Milk<i class="fas fa-solid fa-circle-xmark"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- <button class="clear--btn" onclick="onClear()">Clear All</button> -->
+      <button class="clear--btn">Clear All</button>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="creatingElements.js"></script> -->
+    <!-- <script src="insertingElements.js"></script> -->
+    <!-- <script src="replacingElements.js"></script> -->
+    <!-- <script src="removeElements.js"></script> -->
+    <!-- <script src="events.js"></script> -->
+    <!-- <script src="mouseEvents.js"></script> -->
+    <!-- <script src="eventObject.js"></script> -->
+    <!-- <script src="keyboardEvents.js"></script> -->
+    <!-- <script src="inputEvents.js"></script> -->
+    <script src="formSubmission.js"></script>
+    <!-- <script src="eventBubbling.js"></script> -->
+  </body>
+</html>
